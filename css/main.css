@@ -90,6 +90,23 @@
     width: 100%;
     margin: 1em;   
 }
+
+
+.zoom {
+    transition: transform .2s;
+    
+}
+
+.zoom .heading{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.zoom:hover{
+    transform: scale(1.5);
+    position: absolute; 
+    z-index: 9;
+}
+
 .experiences{
     margin: 4em 0;
     position: relative; 
@@ -102,8 +119,9 @@
     box-shadow: 0 0 20px #ccc;
 }
 .experiences .card img{
-    width: 100%;
+    width: 90%;
     height: 12em;
+    align-items: center;
 }
 .experiences .card-title{
     color:#F97300;
@@ -117,6 +135,7 @@
 }
 .experiences .card-body{
     padding: 1em;
+    margin-left: 0em;
 }
 .side-interests{
     margin: 4em 0;
