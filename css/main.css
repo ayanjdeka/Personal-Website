@@ -91,20 +91,37 @@
     margin: 1em;   
 }
 
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+  }
+
 
 .zoom {
     transition: transform .2s;
     
 }
 
-.zoom .heading{
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
 .zoom:hover{
     transform: scale(1.5);
     position: absolute; 
     z-index: 9;
+    visibility: visible;
+}
+
+.zoom:hover img{
+    filter: blur(4px);
+}
+.zoom .heading{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.zoom:hover .heading{
+    visibility: visible;
 }
 
 .experiences{
@@ -149,18 +166,30 @@
     position: relative;
  }
 .side-interests .des{
-    background: #2e00f9;
     color: #fff;
     text-align: center;
-    border-bottom-left-radius: 93%;
+    visibility: hidden;
+    font: 1px;
     transition:.3s ease-in-out;  
 }
 .side-interests .item:hover .des{
     height: 100%;
     background:#f973007d;
+    visibility: visible;
     position: absolute;
     width: 89%;
     padding: 5em;
     top: 0;
     border-bottom-left-radius: 0;
+    font: 10px;
+}
+
+.zoom1 {
+    transition: transform .2s;  
+}
+
+.zoom1:hover{
+    transform: scale(1.5);
+    position: absolute; 
+    z-index: 9;
 }
