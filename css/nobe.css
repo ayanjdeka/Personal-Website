@@ -1,0 +1,41 @@
+.header{
+    background-image: url('../images/ecommerce.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay{
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.384);
+}
+
+.description{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    
+}
+.description h1{
+    color:orange ;
+}
+.des{
+    color:#666;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+
+    line-height: 2.5;
+}
+
+.header .but{
+	border:1px  solid #f9006c;
+	background:#f9006c;
+	color:#fff;
+    top: 0;
+    right: 0;
+}

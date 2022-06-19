@@ -14,12 +14,12 @@
 }
 
 .overlay{
-    position: absolute;
+    position: relative;
     min-height: 100%;
     min-width: 100%;
     left: 0;
     top: 0;
-    background: rgba(244, 244, 244, 0.79);
+    background: rgba(244, 244, 244, 0.785);
 }
 
 .description{
@@ -38,12 +38,6 @@
     width: 50%;
     line-height: 1.5;
 }
-.description button{
-    border:1px  solid #2e00f9;
-    background:#2e00f9;
-    color:#fff;
-}
-
 
 .about{
     margin: 4em 0;
@@ -52,19 +46,71 @@
 }
 .about h1{
     color:#2e00f9;
-    margin: 2em;
+    margin: em;
 }
 .about img{
     height: 100%;
     width: 100%;
-    border-radius: 50%
+    
 }
-.about span{
+.text-justify{
     display: block;
     color: #888;
     position: absolute;
     left: 95px;
 }
+
+.text-typing, .text-nowrap {
+    white-space:nowrap;
+    display: block;
+}
+
+.typing-words span {
+    text-indent: 10px;
+    position: absolute;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #555;
+    visibility: hidden;
+    border-right: 4px solid transparent;
+    max-width: 19rem; /* width of widest string */
+}
+.typing-words span:nth-child(1) {
+	animation: typing 0.7s steps(5), typingReverse 0.7s steps(5) 0.7s, blink-wait 1s step-end 1 1.4s, blink-caret 0.6s step-end infinite;
+}
+.typing-words span:nth-child(2) { 
+	animation: typing 0.7s steps(5) 2.4s, typingReverse 0.7s steps(5) 3.1s, blink-wait 1s step-end 1 3.8s, blink-caret 0.6s step-end infinite;
+}
+.typing-words span:nth-child(3) { 
+	animation: typing 0.7s steps(5) 4.8s, typingReverse 0.7s steps(5) 5.5s, blink-wait 1s step-end 1 6.2s, blink-caret 0.6s step-end infinite;
+}
+.typing-words span:nth-child(4) { 
+	animation: typing 0.7s steps(5) 7.2s, typingReverse 0.7s steps(5) 7.9s, blink-wait 1s step-end 1 8.5s, blink-caret 0.6s step-end infinite;
+}
+.typing-words span:nth-child(5) {  
+	animation: blink-caret 0.6s step-end 7 9.5s, typing 1s steps(7) 9.5s forwards;
+}
+
+@keyframes typing {
+    from { width: 0; visibility: hidden; }
+    to { width: 100%; visibility: visible; color: #000; }
+}
+
+@keyframes typingReverse {
+    from { width: 100%; visibility: visible; color: #000; }
+    to { width: 0; }
+}
+
+@keyframes blink-wait {
+    from, to { width: 0; visibility: hidden; }
+    30%, 60% { width: 15px; visibility: visible; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #999; }
+}
+
 .about .desc{
     padding: 2em;
     border-left:4px solid #10828C;
@@ -91,18 +137,43 @@
     margin: 1em;   
 }
 
-.heading {
+.zoom {
+    transition: transform .5s;
+    display: inline-block;
+    
+}
+
+.zoom .heading{
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    position: fixed;
+    display: inline-block;
+    top: 20%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.zoom .descript{
     position: absolute;
+    display: inline-block;
     top: 50%;
     left: 55%;
     transform: translate(-50%, -50%);
     visibility: hidden;
-  }
-
-
-.zoom {
-    transition: transform .2s;
-    
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.zoom .info{
+    position: absolute;
+    display: inline-block;
+    top: 85%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 .zoom:hover{
@@ -110,19 +181,24 @@
     position: absolute; 
     z-index: 9;
     visibility: visible;
+    
 }
 
 .zoom:hover img{
     filter: blur(4px);
 }
-.zoom .heading{
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
 
 .zoom:hover .heading{
     visibility: visible;
 }
+
+.zoom:hover .descript{
+    visibility: visible;
+}
+.zoom:hover .info{
+    visibility: visible;
+}
+
 
 .experiences{
     margin: 4em 0;
@@ -168,28 +244,30 @@
 .side-interests .des{
     color: #fff;
     text-align: center;
-    visibility: hidden;
-    font: 1px;
-    transition:.3s ease-in-out;  
-}
-.side-interests .item:hover .des{
-    height: 100%;
-    background:#f973007d;
     visibility: visible;
-    position: absolute;
-    width: 89%;
-    padding: 5em;
-    top: 0;
-    border-bottom-left-radius: 0;
-    font: 10px;
 }
+
 
 .zoom1 {
     transition: transform .2s;  
 }
 
-.zoom1:hover{
-    transform: scale(1.5);
-    position: absolute; 
-    z-index: 9;
+.zoom1 .des{
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: small;
+}
+
+.zoom1:hover img{
+    filter: blur(4px);
+}
+
+.zoom1:hover .des{
+    visibility: visible;
 }
