@@ -1,18 +1,19 @@
 .header{
-    background-image: url('../images/texasinstruments.jpg');
+    background-image: url('../images/tibackground.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
 
-.overlay{
-    position: relative;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(244, 244, 244, 0.64);
-}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
 
 .description{
     position: relative;
@@ -20,22 +21,15 @@
     margin: auto;
     
 }
-.description h1{
+.head{
     color:#f90000 ;
+    animation: fadeIn 1.5s;
 }
 .des{
     color:rgb(0, 0, 0);
     position: relative;
     font-size: 20px;
     text-align: center;
-
     line-height: 2.5;
-}
-
-.header .but{
-	border:1px  solid #f9006c;
-	background:#f9006c;
-	color:#fff;
-    top: 0;
-    right: 0;
+    animation: fadeIn ease 10s;
 }

@@ -6,11 +6,31 @@
 .navbar-collapse{ justify-content: flex-end; }
 .navbar-toggler{ background: #fff !important;}
 
+body{
+	padding: 0;
+	margin: 0;
+	background:#f4f4f4;
+
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
 .header{
     background-image: url('../images/background.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+}
+
+.hidden{
+    opacity: 0;
 }
 
 .overlay{
@@ -19,7 +39,7 @@
     min-width: 100%;
     left: 0;
     top: 0;
-    background: rgba(244, 244, 244, 0.785);
+    background: rgba(244, 244, 244, 0.747);
 }
 
 .description{
@@ -33,10 +53,11 @@
     color:#2e00f9 ;
 }
 .description p{
-    color:#666;
+    color:rgb(6, 0, 0);
     font-size: 20px;
     width: 50%;
     line-height: 1.5;
+    animation: fadeIn 5.5s;
 }
 
 .about{
@@ -65,7 +86,7 @@
     display: block;
 }
 
-.typing-words span {
+.typing-words span .start {
     text-indent: 10px;
     position: absolute;
 	overflow: hidden;
@@ -164,6 +185,7 @@
     visibility: hidden;
     color: rgb(255, 255, 255);
     text-align: center;
+    font-size: small;
 }
 .zoom .info{
     position: absolute;
