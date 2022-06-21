@@ -22,17 +22,22 @@ body{
     }
 }
 
+@keyframes typing1 {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: #2e00f9; }
+}
+
 .header{
     background-image: url('../images/background.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
-
-.hidden{
-    opacity: 0;
-}
-
 .overlay{
     position: relative;
     min-height: 100%;
@@ -51,13 +56,21 @@ body{
 }
 .description h1{
     color:#2e00f9 ;
+    overflow: hidden;
+    border-right: .15em solid #2e00f9;
+    white-space: nowrap;
+    animation: 
+        typing 4.5s steps(31) forwards,
+        blink .8s infinite;
+    max-width: fit-content;
+    
 }
-.description p{
+.intro-paragraph{
     color:rgb(6, 0, 0);
     font-size: 20px;
     width: 50%;
     line-height: 1.5;
-    animation: fadeIn 5.5s;
+    animation: fadeIn 5.0s;
 }
 
 .about{
@@ -66,8 +79,16 @@ body{
     position: relative;
 }
 .about h1{
-    color:#2e00f9;
-    margin: em;
+    color:#2a00e8;
+    overflow: hidden;
+    border-right: .15em solid #2e00f9;
+    white-space: nowrap;
+    animation: 
+        typing 4.0s steps(20) forwards,
+        blink .8s infinite;
+    max-width: fit-content;
+    margin: auto;
+    text-align: center;
 }
 .about img{
     height: 100%;
@@ -86,7 +107,7 @@ body{
     display: block;
 }
 
-.typing-words span .start {
+.typing-words span {
     text-indent: 10px;
     position: absolute;
 	overflow: hidden;
@@ -94,7 +115,7 @@ body{
 	color: #555;
     visibility: hidden;
     border-right: 4px solid transparent;
-    max-width: 19rem; /* width of widest string */
+    max-width: fit-content; /* width of widest string */
 }
 .typing-words span:nth-child(1) {
 	animation: typing 0.7s steps(5), typingReverse 0.7s steps(5) 0.7s, blink-wait 1s step-end 1 1.4s, blink-caret 0.6s step-end infinite;
@@ -149,8 +170,16 @@ body{
     position: relative; 
 }
 .projects h1{
-    color:#2e00f9;
-    margin: 2em; 
+    color:#2a00e8;
+    overflow: hidden;
+    border-right: .15em solid #2e00f9;
+    white-space: nowrap;
+    animation: 
+        typing 6.5s steps(40) forwards,
+        blink .8s infinite;
+    max-width: fit-content;
+    margin: auto;
+    text-align: center;
 }
 .projects img{
     height: 15rem;
@@ -160,6 +189,7 @@ body{
 
 .zoom {
     transition: transform .5s;
+    animation: fadeIn 8s;
     display: inline-block;
     
 }
@@ -228,7 +258,7 @@ body{
  }
 .experiences h1{
     color:#2e00f9;
-    margin: 2em; 
+ 
 }
 .experiences .card{
     box-shadow: 0 0 20px #ccc;
@@ -257,8 +287,7 @@ body{
     position: relative;  
 }
 .side-interests h1{
-    color:#2e00f9;
-    margin: 2em; 
+    color:#2a00e8;
 }
 .side-interests .item{
     position: relative;
