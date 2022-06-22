@@ -78,7 +78,7 @@ body{
     padding: 1em;
     position: relative;
 }
-.about h1{
+.myself-desc {
     color:#2a00e8;
     overflow: hidden;
     border-right: .15em solid #2e00f9;
@@ -169,7 +169,7 @@ body{
     margin: 4em 0;
     position: relative; 
 }
-.projects h1{
+.proj-desc{
     color:#2a00e8;
     overflow: hidden;
     border-right: .15em solid #2e00f9;
@@ -256,8 +256,17 @@ body{
     margin: 4em 0;
     position: relative; 
  }
-.experiences h1{
-    color:#2e00f9;
+.exp-desc{
+    color:#2a00e8;
+    overflow: hidden;
+    border-right: .15em solid #2e00f9;
+    white-space: nowrap;
+    animation: 
+        typing 6.5s steps(40) forwards,
+        blink .8s infinite;
+    max-width: fit-content;
+    margin: auto;
+    text-align: center;
  
 }
 .experiences .card{
@@ -286,8 +295,17 @@ body{
     margin: 4em 0;
     position: relative;  
 }
-.side-interests h1{
+.side-desc{
     color:#2a00e8;
+    overflow: hidden;
+    border-right: .15em solid #2e00f9;
+    white-space: nowrap;
+    animation: 
+        typing 6.5s steps(40) forwards,
+        blink .8s infinite;
+    max-width: fit-content;
+    margin: auto;
+    text-align: center;
 }
 .side-interests .item{
     position: relative;
@@ -321,4 +339,17 @@ body{
 
 .zoom1:hover .des{
     visibility: visible;
+}
+
+.conn-desc{
+    color:#2a00e8;
+    overflow: hidden;
+    border-right: .15em solid #2e00f9;
+    white-space: nowrap;
+    animation: 
+        typing 6.5s steps(40) forwards,
+        blink .8s infinite;
+    max-width: fit-content;
+    margin: auto;
+    text-align: center;
 }
