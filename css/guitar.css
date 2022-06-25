@@ -1,0 +1,38 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    cursor: url(../pick.svg), auto;
+    background-image: linear-gradient(red, yellow);
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .guitar {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @keyframes vibrate {
+    0% {
+      transform: translateY(-2px);
+    }
+    50% {
+      transform: translateY(2px);
+    }
+    100% {
+      transform: translateY(-2px);
+    }
+  }
+  .string {
+    transform: translateY(0);
+  }
+  .string.vibrating {
+    animation: vibrate 0.05s infinite;
+  }
