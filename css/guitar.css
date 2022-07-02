@@ -2,9 +2,10 @@
 body {
     padding: 0;
     margin: 0;
+    height: 100%;
     width: 100%;
     cursor: url(../pick.svg), auto;
-    background-image: linear-gradient(red, yellow);
+    background-image: linear-gradient(to bottom right, red, yellow);
   }
 
   .container {
