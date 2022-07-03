@@ -5,7 +5,7 @@ body {
     height: 100%;
     width: 100%;
     cursor: url(../pick.svg), auto;
-    background-image: linear-gradient(to bottom right, red, yellow);
+    background-color: rgb(0, 140, 255);
   }
 
   .container {

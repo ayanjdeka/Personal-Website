@@ -9,8 +9,8 @@
 body{
 	padding: 0;
 	margin: 0;
-	background:#f4f4f4;
-
+    background: rgb(41,120,196);
+    background: linear-gradient(90deg, rgba(41,120,196,1) 27%, rgba(46,245,222,1) 99%);
 }
 
 @keyframes fadeIn {
@@ -70,7 +70,7 @@ body{
     font-size: 20px;
     width: 50%;
     line-height: 1.5;
-    animation: fadeIn 5.0s;
+    animation: fadeIn 1.5s;
 }
 
 .about{
