@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+@import url('https://fonts.googleapis.com/css?family=Dekko');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+@import url('https://fonts.googleapis.com/css?family=Allerta Stencil');
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
 .navbar{ background: #2e00f9;}
 .nav-link, .navbar-brand{  color: #ffffff; cursor: pointer;}
 .nav-link{ margin-right: 1em !important;}
@@ -52,6 +56,7 @@ body{
     top: 30%;
     margin: auto;
     padding: 2em;
+    font-family: "Dekko";
     
 }
 .description h1{
@@ -89,6 +94,7 @@ body{
     max-width: fit-content;
     margin: auto;
     text-align: center;
+    font-family: 'Merienda';
 }
 .about img{
     height: 100%;
@@ -155,19 +161,22 @@ body{
 
 .about .desc{
     padding: 2em;
-    border-left:4px solid #10828C;
+    border-left:4px solid #11bbca;
 }
 .about .desc h3{
-    color: #10828C;
+    color: #000000;
+    font-family: 'Alegrya;';
 }
 .about .desc p{
     line-height:2;
-    color:#888;
+    color:rgb(0, 0, 0);
+    font-family: 'Alegrya;';
 }
 
 .projects{
     margin: 4em 0;
     position: relative; 
+    padding: 4em;
 }
 .proj-desc{
     color:#2a00e8;
@@ -180,6 +189,7 @@ body{
     max-width: fit-content;
     margin: auto;
     text-align: center;
+    font-family: 'Merienda';
 }
 .projects img{
     height: 15rem;
@@ -196,7 +206,7 @@ body{
 
 .zoom .heading{
     color: rgb(255, 255, 255);
-    font-family: 'Courier New', monospace;
+    font-family: "Kalam";
     text-align: center;
     position: fixed;
     display: inline-block;
@@ -209,17 +219,20 @@ body{
 .zoom .descript{
     position: absolute;
     display: inline-block;
+    font-family: "Kalam";
     top: 50%;
     left: 55%;
     transform: translate(-50%, -50%);
     visibility: hidden;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: x-small;
+    font-size: small;
+    font-weight: bold;
 }
 .zoom .info{
     position: absolute;
     display: inline-block;
+    font-family: "Kalam";
     top: 85%;
     left: 55%;
     transform: translate(-50%, -50%);
@@ -255,6 +268,7 @@ body{
 .experiences{
     margin: 4em 0;
     position: relative; 
+    padding: 4em;
  }
 .exp-desc{
     color:#2a00e8;
@@ -267,15 +281,19 @@ body{
     max-width: fit-content;
     margin: auto;
     text-align: center;
+    font-family: 'Merienda';
  
 }
 .experiences .card{
     box-shadow: 0 0 20px #ccc;
+    background: rgb(196,41,182);
+    background: linear-gradient(90deg, rgba(196,41,182,1) 27%, rgba(245,186,46,1) 99%);
 }
 .experiences .card img{
     width: 90%;
     height: 12em;
     align-items: center;
+    
 }
 .experiences .card-title{
     color:#F97300;
@@ -294,6 +312,7 @@ body{
 .side-interests{
     margin: 4em 0;
     position: relative;  
+    padding: 4em;
 }
 .side-desc{
     color:#2a00e8;
@@ -306,6 +325,7 @@ body{
     max-width: fit-content;
     margin: auto;
     text-align: center;
+    font-family: 'Merienda';
 }
 .side-interests .item{
     position: relative;
@@ -352,4 +372,5 @@ body{
     max-width: fit-content;
     margin: auto;
     text-align: center;
+    font-family: 'Merienda';
 }

@@ -21,7 +21,7 @@
 
 @keyframes blink {
     from { border-color: transparent }
-    to { border-color: #2e00f9; }
+    to { border-color: #f9007c; }
 }
 
 .description{
@@ -47,7 +47,7 @@
     position: relative;
     font-size: 20px;
     text-align: center;
-    animation: fadeIn 7s;
+    animation: fadeIn 5s;
 
     line-height: 2.5;
 }

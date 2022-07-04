@@ -21,7 +21,7 @@
 
 @keyframes blink {
     from { border-color: transparent }
-    to { border-color: #2e00f9; }
+    to { border-color: orange; }
 }
 
 
