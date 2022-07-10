@@ -9,7 +9,8 @@
 
 </head>
 <script>
-     if (window.matchMedia("(max-width: 650px)").matches) {
+    var userAgent = navigator.userAgent.toLowerCase();
+     if (window.matchMedia("(max-width: 700px)").matches || userAgent.indexOf("mobile")>=0) {
         window.location.href="mobile.html";
         console.log("Found Mobile: "+ window.innerWidth);
     } else {
